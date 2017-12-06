@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.manifest">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <title>潘多拉</title>
+  <script>
+    var DPR    = window.devicePixelRatio || 1,
+        html   = document.documentElement,
+        height = window.innerHeight,
+        width  = window.innerWidth,
+        wh     = 667 / 375;
+    if (width / height < wh) {
+      height = width / wh;
+    }
+    if (html) {
+      html.style.fontSize = height * DPR / 750 * (36 / DPR) + 'px'
+    }
+  </script>
+</head>
+<body>
+<div id="app">
+  <div class="loading"></div>
+</div>
+</body>
+</html>

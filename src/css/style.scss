@@ -1,0 +1,211 @@
+@import "~swiper/dist/css/swiper.min.css";
+
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 225%;
+  overflow: hidden;
+  font-family: "方正兰亭黑", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #21163e url("../images/bg.png") no-repeat 0 0/100% 100%;
+}
+
+#app, .container, .loading {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.loading {
+  background: url("../images/loading.gif") no-repeat 50% 50%/2rem 2rem;
+}
+
+.section {
+  position: relative;
+  padding-top: .833rem;
+  .btn {
+    width: 1.11rem;
+    height: 1.11rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .close-btn {
+    background: url('../images/btn_close.png') no-repeat 0 0/1.11rem 1.11rem;
+    left: 1.67rem;
+  }
+  .back-btn {
+    background: url('../images/btn_back.png') no-repeat 0 0/.56rem 1.11rem;
+    left: 1.67rem;
+  }
+  .home-btn {
+    background: url('../images/btn_home.png') no-repeat 0 0/1.11rem 1.11rem;
+    right: 1.67rem;
+  }
+  .title {
+    text-align: center;
+    font-size: 1.33rem;
+    line-height: 1;
+  }
+}
+
+.skill-list {
+  margin-top: 1.56rem;
+  text-align: center;
+  .item {
+    display: inline-block;
+    line-height: 1;
+    height: 5.445rem;
+    width: 11rem;
+    .img {
+      display: inline-block;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .name {
+      margin: .66rem 0 .44rem 0;
+    }
+    .disc {
+      color: #bbb;
+      font-size: 0.833rem;
+      height: 0.833rem;
+      line-height: 0.833rem;
+      &.coming {
+        &::before {
+          content: '即将推出';
+          position: relative;
+          top: -.5px;
+        }
+        border: 1px solid #bbb;
+        border-radius: .722rem;
+        font-size: .722rem;
+        display: inline-block;
+        width: 4.167rem;
+        height: 1.111rem;
+        line-height: 1.111rem;
+        position: relative;
+        top: -.14rem;
+      }
+    }
+  }
+}
+
+.detail {
+  .detail-box {
+    position: relative;
+    padding: 1.35rem 0 0 6.889rem;
+    .menus {
+      display: inline-block;
+      width: 2.5rem;
+      height: 15.17rem;
+      overflow: hidden;
+      //border: 1px solid;
+      position: absolute;
+    }
+    .menu {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inherit;
+      margin: .43rem 0;
+      img {
+        display: inline-block;
+        width: 1.667rem;
+        height: 1.667rem;
+        margin: auto;
+      }
+    }
+    .swiper-container {
+      height: 15.17rem;
+      //margin-top: -7.7rem;
+      .swiper-slide {
+        opacity: .2;
+      }
+      .swiper-slide-prev, .swiper-slide-next {
+        opacity: .6;
+      }
+      .swiper-slide-active {
+        opacity: 1;
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+    .view {
+      width: 100%;
+      padding: 0 2.333rem 0 6.667rem;
+      display: inline-block;
+      -webkit-mask-image: -webkit-linear-gradient(bottom, transparent, rgba(255, 255, 255, 0.2) 1rem, #fff 1.778rem);
+      mask-image: linear-gradient(bottom, transparent, rgba(255, 255, 255, 0.2) 1rem, #fff 1.778rem);
+      .title {
+        font-size: 1.333rem;
+        line-height: 1.333rem;
+        &::after {
+          content: '';
+          width: 16.9rem;
+          border-bottom: 1px solid;
+          opacity: .2;
+          display: block;
+          margin-top: .778rem;
+        }
+        .disc{
+          font-size: 1rem;
+        }
+      }
+      .text-view {
+        height: 14.4rem;
+        padding: .389rem 0 1.778rem 0;
+        line-height: 1.778rem;
+        overflow-y: scroll;
+        -webkit-mask-image: -webkit-linear-gradient(transparent, #fff .778rem);
+        mask-image: linear-gradient(transparent, #fff .778rem);
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  width: 100%;
+  text-align: center;
+  bottom: 1.112rem;
+  line-height: 0;
+  .swiper-pagination-bullet {
+    width: .556rem;
+    height: .556rem;
+    margin: 0 .278rem;
+    background-color: white;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgba(255, 255, 255, .38);
+    width: 1rem;
+    border-radius: .556rem;
+  }
+}
+
+@media (max-device-height: 414px) and (min-resolution: 3dppx) {
+  html {
+    font-size: 124.2%;
+  }
+}
+
+@media (max-device-height: 375px) and (min-resolution: 2dppx) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+@media (max-device-height: 320px) and (min-resolution: 2dppx) {
+  html {
+    font-size: 95.8%;
+  }
+}
