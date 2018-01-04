@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="section">
-      <div class="btn close-btn"></div>
+      <div class="btn close-btn" onclick="android.closeHelp()"></div>
       <div class="title">技能指令</div>
     </section>
     <div class="swiper-container">

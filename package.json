@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.2.3",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",

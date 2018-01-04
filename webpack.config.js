@@ -15,6 +15,7 @@ const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const UglifyJsPlugin     = require('webpack/lib/optimize/UglifyJsPlugin');
 const HtmlWebpackPlugin  = require('html-webpack-plugin')
 const CopyWebpackPlugin  = require('copy-webpack-plugin');
+const CleanWebpackPlugin  = require('clean-webpack-plugin');
 const ExtractTextPlugin  = require('extract-text-webpack-plugin')
 const ManifestPlugin     = require('./webpack-manifest')
 const fs                 = require("fs");
@@ -92,6 +93,7 @@ const config   = {
     ]
   },
   plugins     : [
+    new CleanWebpackPlugin(['app']),
     new CommonsChunkPlugin({
       name: ["main", 'vendor']
     }),

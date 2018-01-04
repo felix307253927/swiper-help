@@ -2,7 +2,7 @@
   <div class="detail">
     <div class="section">
       <router-link class="btn back-btn" to="home" tag="div"></router-link>
-      <div class="btn home-btn" @click=""></div>
+      <div class="btn home-btn" onclick="android.returnHome()"></div>
     </div>
     <div class="detail-box">
       <div class="menus">
