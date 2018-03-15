@@ -45,7 +45,7 @@
       }
     },
     mounted() {
-      let _this    = this;
+      let _this    = this, timer;
       let textView = this.$refs.textView;
       let name     = this.$route.query.name, initialSlide = 0;
       for (let i = 0, len = details.length; i < len; i++) {
@@ -59,16 +59,41 @@
         direction            : 'vertical',
         slidesPerView        : 'auto',
         slideToClickedSlide  : true,
+        speed                : 600,
 //        spaceBetween         : 20,
         centeredSlides       : true,
         freeMode             : true,
         freeModeSticky       : true,
         freeModeMomentumRatio: 0.2,
+        fade                 : {
+          crossFade: false
+        },
+        coverflow            : {
+          rotate      : 100,
+          stretch     : 0,
+          depth       : 300,
+          modifier    : 1,
+          slideShadows: false     // do disable shadows for better performance
+        },
+        flip                 : {
+          limitRotation: true,
+          slideShadows : false     // do disable shadows for better performance
+        },
         initialSlide,
         on                   : {
+          slideChange             : function () {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+              _this.curIdx       = this.activeIndex;
+              textView.scrollTop = 0;
+            }, 60)
+          },
           slideChangeTransitionEnd: function () {
-            _this.curIdx       = this.activeIndex;
-            textView.scrollTop = 0;
+            clearTimeout(timer);
+            if (_this.curIdx !== this.activeIndex) {
+              _this.curIdx       = this.activeIndex;
+              textView.scrollTop = 0;
+            }
           }
         }
       });

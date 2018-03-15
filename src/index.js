@@ -39,5 +39,8 @@ document.body.onload = function () {
     template: `
   <router-view class="container"></router-view>
   `,
+    mounted() {
+      window.android && android.domLoaded();
+    }
   })
 }

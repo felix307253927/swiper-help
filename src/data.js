@@ -11,7 +11,7 @@ export default [
       discs: "“随便来首歌”"
     }, {
       name : "切换声音",
-      discs: ""
+      discs: "“换个声音”"
     }, {
       name : "视频通话",
       discs: "“视频聊天”"
@@ -100,7 +100,7 @@ export const details = [
     ]
   }, {
     name : "切换声音",
-    disc : true,
+    // disc : true,
     discs: [
       "“开启儿童模式”",
       "“换成男宝宝｜女宝宝的声音”",

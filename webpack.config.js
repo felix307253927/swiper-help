@@ -38,7 +38,7 @@ const config   = {
     filename         : 'js/[name].[hash].js',
     chunkFilename    : 'js/[name].[hash].js',
     sourceMapFilename: 'js/[name].[hash].map',
-    publicPath       : '/'
+    publicPath       : ''
   },
   resolve     : {
     alias  : {
@@ -87,7 +87,7 @@ const config   = {
         test  : /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
         loader: 'file-loader',
         query : {
-          name: 'images/[name].[ext]?[hash]',
+          name: '../images/[name].[ext]?[hash]',
         }
       }
     ]

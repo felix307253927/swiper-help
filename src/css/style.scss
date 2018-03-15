@@ -36,23 +36,26 @@ body {
   position: relative;
   padding-top: 1.11rem;
   .btn {
-    width: 1.11rem;
-    height: 1.11rem;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
     cursor: pointer;
     z-index: 999;
   }
   .close-btn {
-    background: url('../images/btn_close.png') no-repeat 0 0/1.11rem 1.11rem;
-    left: 1.167rem;
+    background: url('../images/btn_close.png') no-repeat 0.5rem 0.5rem/1.11rem 1.11rem;
+    left: .667rem;
+    top:.5rem;
   }
   .back-btn {
-    background: url('../images/btn_back.png') no-repeat 0 0/.667rem 1.11rem;
-    left: 1.167rem;
+    background: url('../images/btn_back.png') no-repeat 0.5rem 0.5rem/.667rem 1.11rem;
+    left: .667rem;
+    top:.5rem;
   }
   .home-btn {
-    background: url('../images/btn_home.png') no-repeat 0 0/1.11rem 1.11rem;
-    right: 1.167rem;
+    background: url('../images/btn_home.png') no-repeat 0.5rem 0.5rem/1.11rem 1.11rem;
+    right: .667rem;
+    top:.5rem;
   }
   .title {
     text-align: center;
