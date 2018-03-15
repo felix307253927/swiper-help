@@ -119,11 +119,11 @@ const config   = {
       copyUnmodified: true
     }),
     new ManifestPlugin(),
-    new UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
+    // new UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   }
+    // }),
   ],
   devServer   : {
     historyApiFallback: true,

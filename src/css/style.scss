@@ -65,26 +65,37 @@ body {
 }
 
 .skill-list {
-  margin-top: 1.5rem;
   text-align: center;
+  margin-top: 1.33rem;
   .item {
     display: inline-block;
-    line-height: 1;
-    height: 5.445rem;
-    width: 11rem;
+    width: 10rem;
+    height: 12.5rem;
+    margin: auto;
+    padding-top: 1.67rem;
+    border-radius: .8rem;
+    background: url("../images/box_bg.png");
+    overflow: hidden;
+    &:nth-child(2){
+      margin: auto 1rem;
+    }
     .img {
       display: inline-block;
-      height: 2.5rem;
-      width: 2.5rem;
+      height: 2.22rem;
+      width: 2.22rem;
     }
     .name {
-      margin: .66rem 0 .44rem 0;
+      margin: .33rem 0 1.33rem 0;
+      font-size: 1rem;
+      color: white;
+      line-height: 1;
     }
     .disc {
-      color: #bbb;
+      color: #bfbfbf;
       font-size: 0.833rem;
       height: 0.833rem;
       line-height: 0.833rem;
+      margin-top: 0.556rem;
       &.coming {
         &::before {
           content: '即将推出';
@@ -104,6 +115,7 @@ body {
     }
   }
 }
+
 
 .detail {
   .detail-box {
