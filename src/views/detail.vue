@@ -2,14 +2,14 @@
   <div class="detail">
     <div class="section">
       <router-link class="btn back-btn" to="home" tag="div"></router-link>
-      <div class="btn home-btn" onclick="android.returnHome()"></div>
+      <!--<div class="btn home-btn" onclick="android.returnHome()"></div>-->
     </div>
     <div class="detail-box">
       <div class="menus">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide menu" v-for="d in list" :key="d.name">
-              <img :src="'./images/icons/'+d.name+'.png'" :alt="d.name">
+              <img :src="'./images/icons/'+d.icon+'.png'" :alt="d.name">
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ html, body {
 
 body {
   overflow: hidden;
-  background: #21163e url("../images/bg.png") no-repeat 0 0/100% 100%;
+  background: #3d3746 url("../images/bg.jpg") no-repeat 0 0/100% 100%;
 }
 
 #app, .container, .loading {
@@ -66,36 +66,39 @@ body {
 
 .skill-list {
   text-align: center;
-  margin-top: 1.33rem;
+  margin-top: 2.4rem;
   .item {
     display: inline-block;
-    width: 10rem;
-    height: 12.5rem;
-    margin: auto;
-    padding-top: 1.67rem;
-    border-radius: .5rem;
+    width: 6.4rem;
+    height: 11.1rem;
+    margin: auto .35rem;
+    padding-top: 2.8rem;
+    //border-radius: .5rem;
     background: url("../images/box_bg.png");
     overflow: hidden;
-    &:nth-child(2){
-      margin: auto 1rem;
+    &:first-child	{
+      margin-left: 0;
+    }
+    &:last-child	{
+      margin-right: 0;
     }
     .img {
       display: inline-block;
-      height: 2.22rem;
-      width: 2.22rem;
+      height: 2.5rem;
+      width: 2.5rem;
     }
     .name {
-      margin: .33rem 0 1.33rem 0;
+      margin: 2rem 0 .5rem 0;
       font-size: 1rem;
       color: white;
       line-height: 1;
     }
     .disc {
       color: #bfbfbf;
-      font-size: 0.833rem;
-      height: 0.833rem;
-      line-height: 0.833rem;
-      margin-top: 0.556rem;
+      font-size: 0.7rem;
+      height: 0.7rem;
+      line-height: 0.7rem;
+      //margin-top: 0.556rem;
       &.coming {
         &::before {
           content: '即将推出';
@@ -194,7 +197,7 @@ body {
 .swiper-pagination {
   width: 100%;
   text-align: center;
-  bottom: 1.112rem;
+  bottom: 2rem;
   line-height: 0;
   .swiper-pagination-bullet {
     width: .556rem;
