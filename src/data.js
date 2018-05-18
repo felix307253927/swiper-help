@@ -150,7 +150,7 @@ export default [
       "discs": [
         "“音量增大”"
       ],
-      "icon": "icon_feedback"
+      "icon": "icon_play"
     }
   ]
 ]
@@ -354,6 +354,6 @@ export const details = [
       "随机播放|循环播放|顺序播放|单曲循环",
       "音量增大|音量减小"
     ],
-    "icon": "icon_feedback"
+    "icon": "icon_play"
   }
 ]
