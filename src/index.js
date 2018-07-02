@@ -32,15 +32,13 @@ const router = new Router({
   routes
 })
 
-document.body.onload = function () {
-  new Vue({
-    el      : '#app',
-    router,
-    template: `
+new Vue({
+  el      : '#app',
+  router,
+  template: `
   <router-view class="container"></router-view>
   `,
-    mounted() {
-      window.android && android.domLoaded();
-    }
-  })
-}
+  mounted() {
+    window.androidLoad();
+  }
+})
