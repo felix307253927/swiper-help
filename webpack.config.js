@@ -77,7 +77,7 @@ const config   = {
         }),
       },
       {
-        test  : /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        test  : /\.(eot|ttf|woff|woff2)(\?\S*)?$/,
         loader: 'file-loader',
         query : {
           name: 'fonts/[name].[ext]',

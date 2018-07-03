@@ -19,7 +19,7 @@ html, body {
 
 body {
   overflow: hidden;
-  //background: #3d3746 url("../images/bg.jpg") no-repeat 0 0/100% 100%;
+  background: #3d3746 url("../images/bg.jpg") no-repeat 0 0/100% 100%;
   background-color: rgba(255, 255, 255, 0);
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -28,15 +28,15 @@ body {
   user-select: none;
 }
 
-#app, .container, .loading {
+#app, .loading {
   width: 100%;
   height: 100%;
   font-size: 1rem;
 }
 
-.loading {
+/*.loading {
   background: url("../images/loading.gif") no-repeat 50% 50%/2rem 2rem;
-}
+}*/
 
 .section {
   position: relative;
@@ -49,24 +49,69 @@ body {
     z-index: 999;
   }
   .close-btn {
-    background: url('../images/btn_close.png') no-repeat 0.5rem 0.5rem/1.11rem 1.11rem;
-    left: .667rem;
+    background: url(../images/btn_close.png?e384291…) no-repeat 0/1rem;
+    left: 1.3rem;
     top: 1.6rem;
   }
   .back-btn {
-    background: url('../images/btn_back.png') no-repeat 0.5rem 0.5rem/.667rem 1.11rem;
-    left: .667rem;
+    background: url('../images/btn_back.png') no-repeat 0/.8rem;
+    left: 1.3rem;
     top: 1.6rem;
   }
   .home-btn {
-    background: url('../images/btn_home.png') no-repeat 0.5rem 0.5rem/1.11rem 1.11rem;
-    right: .667rem;
+    background: url('../images/btn_home.png') no-repeat 0/1rem;
+    left: 1.3rem;
     top: .5rem;
   }
   .title {
     text-align: center;
     font-size: 1.33rem;
     line-height: 1;
+  }
+}
+
+.home-container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 14.5rem;
+  margin-top: .8rem;
+  padding-left: 1.9rem;
+  letter-spacing: .05rem;
+  -webkit-mask-image: -webkit-linear-gradient(bottom, transparent, rgba(255, 255, 255, 0.2) .1rem, #fff 1.2rem);
+  mask-image: linear-gradient(bottom, transparent, rgba(255, 255, 255, 0.2) .1rem, #fff 1.2rem);
+  .item {
+    position: relative;
+    height: 4rem;
+    line-height: 1;
+    font-size: 1.3rem;
+    padding: 1.4rem 1.9rem 1.3rem 0;
+    color: white;
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
+    .icon-right {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.9rem;
+      height: 1rem;
+      width: .6rem;
+      opacity: .8;
+      background: url("../images/right.svg") no-repeat -0.2rem/1rem;;
+      //background: url('../images/btn_close.png');
+    }
+  }
+  .question {
+    font-size: 1.3rem;
+    .name {
+      padding-bottom: 1.3rem;
+      margin-bottom: 1.3rem;
+      margin-top: .3rem;
+      font-weight: 500;
+      border-bottom: .1rem solid rgba(255, 255, 255, 0.1);
+    }
+    .answer{
+      padding-right: 1.8rem;
+      line-height: 1.6;
+    }
   }
 }
 

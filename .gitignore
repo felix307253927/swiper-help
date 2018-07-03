@@ -3,3 +3,6 @@ app/
 node_modules/
 .idea/
 .git/
+test/
+images
+*.zip
