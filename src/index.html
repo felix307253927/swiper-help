@@ -23,7 +23,11 @@
     if (html) {
       html.style.fontSize = height * DPR / 750 * (36 / DPR) + 'px'
     }
-
+    if (window.android) {
+      window.jsonData = JSON.parse(android.loadData() || "[]")
+    } else{
+      window.jsonData =[]
+    }
     window.androidLoad = function () {
       if (!window.androidLoad.isRun) {
         window.android && android.domLoaded();

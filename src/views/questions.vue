@@ -14,12 +14,11 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import list from 'data';
 
   export default {
     data() {
       return {
-        list
+        list: jsonData
       }
     },
     computed: {
